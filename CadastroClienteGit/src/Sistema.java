@@ -6,9 +6,12 @@ public class Sistema {
 
     private static void adicionarCliente() {
         
-        String nome = Console.lerString("Coloque o nome:");
-        String telefone = Console.lerString("Coloque o telefone:");
-        String email = Console.lerString("Coloque o e-mail:");
+        System.out.print("Coloque o nome: ");
+        String nome = Console.lerString();
+        System.out.print("Coloque o telefone: ");
+        String telefone = Console.lerString();
+        System.out.print("Coloque o e-mail: ");
+        String email = Console.lerString();
         
         Cliente cliente = new Cliente(nome, telefone, email);
 
